@@ -1,0 +1,33 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import firebase from 'firebase';
+
+
+require('firebase/firestore');
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyC7LLr5D147SmIRCSQGPlWplirWWUSbNU8",
+    authDomain: "evernote-clone-904db.firebaseapp.com",
+    projectId: "evernote-clone-904db",
+    storageBucket: "evernote-clone-904db.appspot.com",
+    messagingSenderId: "197627117398",
+    appId: "1:197627117398:web:7a9315e89bceaa42f3e0f7",
+    measurementId: "G-VWXM3D62Z6"
+  };
+  firebase.initializeApp(firebaseConfig);
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
